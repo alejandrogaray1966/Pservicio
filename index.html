@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Servicio</title>
+    <link rel="icon" type="image/png" href="icon/icono.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="top-section">
+            <div class="titles">
+                <h1 class="app-title">Servicio</h1>
+                <h2 class="app-subtitle">Al alcance de tu mano</h2>
+            </div>
+            <div class="icon-stack">
+                <img id="btnIdioma" src="img/idioma.png" alt="Cambiar idioma" class="icon-btn" title="Cambiar idioma">
+                <img id="btnModo" src="img/modoclaro.png" alt="Modo claro/oscuro" class="icon-btn" title="Modo claro/oscuro">
+                <div class="like-container">
+                    <img id="btnLike" src="img/megusta.png" alt="Me gusta" class="icon-btn" title="Me gusta">
+                    <span id="contadorLikes" class="like-badge">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="menu">Menú</div>
+        <nav class="barra">
+            <a href="html/page404.html" title="Ir a la página de Profesionales"><p class="botonDelMenu">Profesionales</p></a>
+            <a href="html/page404.html" title="Ir a la página de Presupuestos"><p class="botonDelMenu">Presupuestos</p></a>
+            <a href="html/page404.html" title="Ir a la página de Conversaciones"><p class="botonDelMenu">Conversaciones</p></a>
+            <a href="html/page404.html" title="Ir a la página de Trabajos"><p class="botonDelMenu">Trabajos</p></a>
+            <a href="html/page404.html" title="Ir a la página de Perfil"><p class="botonDelMenu">Mi Perfil</p></a>
+            <a href="html/page404.html" title="Ir a la página de Login"><p class="botonDelMenu">Inicia Sesión</p></a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h3>¿Necesitas un?</h3>
+            <figure>
+                <a class="logo" href="html/page404.html">
+                    <img src="img/electricista.png" alt="Logo de Electricista" title="Electricista">
+                </a>
+                <a class="logo" href="html/page404.html">
+                    <img src="img/gasista.png" alt="Logo de Gasista" title="Gasista">
+                </a>
+                <a class="logo" href="html/page404.html">
+                    <img src="img/plomero.png" alt="Logo de Plomero" title="Plomero">
+                </a>
+            </figure>
+            <h3>¿O tal vez buscas un?</h3>
+            <form id="formulario">
+                <label for="oficio">Seleccione un oficio:</label>
+                <select id="oficio" name="oficio">
+                    <option value="albanil">Albañil</option>
+                    <option value="carpintero">Carpintero</option>
+                    <option value="electricista">Electricista</option>
+                    <option value="gasista">Gasista</option>
+                    <option value="pintor">Pintor</option>
+                    <option value="plomero">Plomero</option>
+                </select>
+                <br>
+                <button type="submit">Buscar</button>
+            </form>
+            <h3>¿Dónde te encontrás?</h3>
+            <figure>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/clima.jpg" alt="Foto del Lago de Tandil" title="Ir a Google Maps">
+                </a>
+            </figure>
+            <form id="formulario">
+                <label for="partido">Partido:</label>
+                    <select id="partido" name="partido">
+                        <option value="tandil">Tandil</option>
+                    </select>
+                <br>
+                <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="azucena">Azucena</option>
+                        <option value="cerro-leones">Cerro Leones</option>
+                        <option value="de-la-canal">De La Canal</option>
+                        <option value="desvio-aguirre">Desvío Aguirre</option>
+                        <option value="estacion-vela">Estación Vela</option>
+                        <option value="fulton">Fulton</option>
+                        <option value="gardey">Gardey</option>
+                        <option value="iraola">Iraola</option>
+                        <option value="la-numancia">La Numancia</option>
+                        <option value="la-pastora">La Pastora</option>
+                        <option value="tandil">Tandil</option>
+                    </select>
+                <br>
+                <button type="submit">Buscar</button>
+            </form>
+        </article>
+        <aside>
+            <h3>¿Dónde comprar?</h3>
+            <aside class="noticias">
+                <div class="noticia">
+                    <img src="img/noticia1.jpeg" alt="Foto de Materiales Tandil">
+                    <h3>Materiales Tandil</h3>
+                    <p>Tandil - Urquiza 340 - De Lunes a Sabados 07:30 a 15:30</p>
+                    <small>Teléfono: (0249) 445-1054</small>
+                </div>
+                <div class="noticia">
+                    <img src="img/noticia2.jpeg" alt="Foto de Toledo Materiales">
+                    <h3>Toledo Materiales</h3>
+                    <p>Tandil - Pellegrini 273 - De Lunes a Sabados 07:30 a 16:30</p>
+                    <small>Teléfono: (0249) 442-8649</small>
+                </div>
+            </aside>
+        </aside>
+   </main>
+   <footer>
+        <h5>© P-MAS Developers - Cooperativa de Trabajo Asociado - Copyright 2025</h5>
+        <button>Contactanos !!!</button>
+        <h6>Fecha de última actualización: <time>8 de Agosto de 2025</time></h6>
+   </footer>
+   <script src="js/index.js"></script>
+   <script src="js/like.js"></script>
+   <script src="js/idioma.js"></script>
+   <script src="js/modo.js"></script>
+</body>
+</html>

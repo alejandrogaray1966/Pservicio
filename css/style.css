@@ -1,0 +1,294 @@
+/*        *****         *****  modo MOBILE *****         *****       */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    font-size: 50%;
+}
+h1 , h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: grey;
+}
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3em;
+}
+h3 , h4 {
+    text-align: left;
+    text-transform: capitalize;
+    font-style: oblique;
+    color: grey;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+h5 , h6 {
+    text-transform:none;
+    font-style:normal;
+}
+h5 {
+    text-align: center;
+    font-size: 1.2em;
+}
+h6 {
+    text-align: right;
+    font-size: 0.8em;
+}
+p , li {
+    text-align: justify;
+    text-transform: none;
+    font-size: 2em;
+    font-style: normal;
+}
+/* *************************** encabezado */
+header {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    min-height: 100px;
+}
+/* *************************** botones derechos */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+}
+.app-title {
+  font-size: 28px;
+  margin: 0;
+}
+.app-subtitle {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+}
+.icon-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icon-btn {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+.icon-btn:hover {
+    transform: translateX(-5px);
+    background-color:grey;
+    box-shadow: 5px 5px 15px black;
+}
+/* *************************** menu */
+.menu {
+    width: 30%;
+    text-align: center;
+    font-size: 2em;
+    background-color: orangered;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.menu:hover {
+    background-color:grey;
+    box-shadow: 5px 5px 15px black;
+}
+.barra {
+    width: 30%;
+    background-color: orange;
+    color: black;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+}
+.barra.show {
+    display: flex;
+}
+.botonDelMenu {
+    text-align: center;
+    text-transform:capitalize;
+    font-size: 2em;
+    font-style:normal;
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+}
+.botonDelMenu:hover {
+    transform: translateX(5px);
+    background-color:grey;
+    box-shadow: 5px 5px 15px black;
+}
+/* *************************** cuerpo principal */
+main {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+article , aside {
+    width: 95%;
+    margin: 1%;
+    margin-right: 5%;
+}
+/* *************************** para imagenes */
+figure {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+img {
+    width: 90%;
+}
+.logo {
+    width: 20%;
+}
+.fotoNotFound {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+/* *************************** para noticias */
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.noticia {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 5px 5px 15px white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.noticia:hover {
+  transform: translateX(-5px);
+  box-shadow: 5px 5px 15px black;
+}
+.noticia img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+.noticia h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.noticia p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+.noticia small {
+  color: #777;
+  font-size: 0.8rem;
+}
+/* **************************** para el formulario */
+#formulario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 2em;
+    margin: 5%;
+    padding: 5%;
+    border: solid 5px grey;
+}
+#formulario label {
+    white-space: nowrap;
+}
+#formulario select {
+    font-size: 1em; /* Esto se suma al font-size general del formulario */
+}
+button {
+    background-color: orangered;
+    border: solid 3px grey;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    transform: translateX(5px);
+    background-color:grey;
+    box-shadow: 5px 5px 15px black;
+}
+.oculto {
+    display: none;
+}
+/* *************************** botones derechos */
+.like-container {
+    position: relative;
+    display: inline-block;
+}
+.like-badge {
+    position: absolute;
+    bottom: -8px;
+    right: -20px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    min-width: 18px;
+    text-align: center;
+}
+
+/*        *****         ***** pasar a modo DESKTOP *****         *****       */
+
+@media (width >= 768px) {
+    body {
+        font-size: 75%;
+    }
+    h5 {
+        font-size: 1.5em;
+    }
+    .menu {
+        display: none;
+    }
+    .barra {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    main {
+        flex-direction: row;
+    }
+    article {
+        width: 60%;
+        margin: 1%;
+    }
+    aside {
+        width: 40%;
+        margin: 1%;
+        margin-right: 5%;
+    }
+    .fotoNotFound {
+        max-width: 50%;
+    }
+    
+}
