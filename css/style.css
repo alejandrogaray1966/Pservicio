@@ -55,7 +55,6 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
-    min-height: 100px;
 }
 /* *************************** botones derechos */
 .top-section {
@@ -70,11 +69,11 @@ header {
   padding-left: 90px;
 }
 .app-title {
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
 }
 .app-subtitle {
-  font-size: 18px;
+  font-size: 14px;
   margin: 5px 0 0 0;
 }
 .icon-stack {
@@ -170,7 +169,7 @@ img {
 /* *************************** para noticias */
 .noticias {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -213,7 +212,7 @@ img {
     font-size: 2em;
     margin: 5%;
     padding: 5%;
-    border: solid 5px grey;
+    border: solid 3px grey;
 }
 #formulario label {
     white-space: nowrap;
@@ -223,7 +222,7 @@ img {
 }
 button {
     background-color: orangered;
-    border: solid 3px grey;
+    border: solid 2px grey;
     font-size: 1em;
     font-style: normal;
     color: white;
@@ -286,6 +285,9 @@ button:hover {
         width: 40%;
         margin: 1%;
         margin-right: 5%;
+    }
+    .noticias {
+        grid-template-columns: repeat(auto-fit, minmax(250%, 1fr));
     }
     .fotoNotFound {
         max-width: 50%;
